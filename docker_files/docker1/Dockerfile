@@ -1,5 +1,7 @@
 FROM centos:latest
 
-RUN yum upgrade -y
+COPY requirements.txt  requirements.txt
 
-RUN pip install -r  requirements.txt
+RUN yum install python3 -y
+
+RUN pip3 install -r  requirements.txt
