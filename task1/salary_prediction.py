@@ -4,7 +4,7 @@
 import pandas as pd 
 from sklearn.linear_model import LinearRegression 
 from sklearn.model_selection import train_test_split 
-from sklearn.externals import joblib
+import joblib
 
 dataset = pd.read_csv('SalaryData.csv')
 x = dataset['YearsExperience']
@@ -14,7 +14,7 @@ model = LinearRegression()
 model.fit(x , y)
 
 #saving the model for further usage
-from sklearn.externals import joblib
+
 joblib.dump(model, 'salary_prediction.pk1')
 
 #Using the saved model for salary prediction
