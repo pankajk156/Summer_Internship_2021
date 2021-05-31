@@ -24,4 +24,4 @@ salary_model=joblib.load("salary_prediction.pk1")
 
 pred = int(input("Enter Year of Experience : "))
 sal = model.predict([[pred]])
-print("Predicted Salary : ", sal )
+print("Predicted Salary : ", int(sal) )
