@@ -19,7 +19,6 @@ joblib.dump(model, 'salary_prediction.pk1')
 
 #Using the saved model for salary prediction
 
-from sklearn.externals import joblib
 salary_model=joblib.load("salary_prediction.pk1")
 
 pred = int(input("Enter Year of Experience : "))

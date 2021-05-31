@@ -1,6 +1,8 @@
 #!/bin/bash
 
 
+print("To predict the salary....")
 
-python3  salary_model.py
+python3  salary_prediction.py
+
 
