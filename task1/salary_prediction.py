@@ -20,7 +20,6 @@ joblib.dump(model, 'salary_prediction.pk1')
 #Using the saved model for salary prediction
 
 salary_model=joblib.load("salary_prediction.pk1")
-
-pred = int(input("Enter Year of Experience : "))
+pred = float(input("Enter Year of Experience : "))
 sal = model.predict([[pred]])
 print("Predicted Salary : ", int(sal) )
